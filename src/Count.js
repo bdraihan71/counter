@@ -11,8 +11,8 @@ const Count = props =>{
 
 const mapStateToProps = state => {
    return {
-       count: state.count
+       count:  state.firstCount.secondCount.thirdCount.count
    }
-  };
+  }; 
 
 export default connect(mapStateToProps)(Count);

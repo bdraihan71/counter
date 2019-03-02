@@ -14,11 +14,11 @@ const Control = props =>{
 
 const mapDispatchToProps = dispatch => {
     return {
-        add5: () => {
-            dispatch({type: 'ADD5'})
+        add5: () => { 
+            dispatch({type: 'ADD5', })
         },
         add: () => {
-            dispatch({type: 'ADD'})
+            dispatch({type: 'ADD', })
         },
         sub: () => {
             dispatch({type: 'SUB'})
