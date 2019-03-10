@@ -1,24 +1,12 @@
 const initialState = {
-  firstCount: {
-    secondCount: {
-      thirdCount: {
-        count: 0
-      }
-    }
-  }
+  count: 0
 };
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
     case "ADD": {
       return {
-        firstCount: {
-            secondCount: {
-              thirdCount: {
-                count: state.firstCount.secondCount.thirdCount.count + 1
-              }
-            }
-          }
+        count: state.count + 1
       };
     }
 
